@@ -1,15 +1,6 @@
-# How to use this template
+# MAS-2122 Repository
 
-1. Install required tools (see [here](#requirements))
-2. Click `Use this template` on Github (you need to be logged in to Github)
-3. Clone your new and shiny repo (eg. using `Github Desktop`)
-4. Prepare your environment to [get started](#getting-started)
-5. Delete this section of this document!
-6. Replace all `REPLACE_ME` placeholders
-
-# REPLACE_ME: Title
-
-> REPLACE_ME: Enter here a one-liner saying what this code is or does, or will do!
+> Repository for coding exercises - MAS in Architecture and Digital Fabrication at ETH Zürich.
 
 ## Requirements
 
@@ -36,11 +27,6 @@ Open folder in Visual Studio Code:
     code .
 
 Select your environment from the lower left area in Visual Studio Code.
-
-
-🚀 You're ready! 
-
-Start coding on `example.py` and explore the `example_grasshopper.ghx` file.
 
 ## Additional ideas
 
