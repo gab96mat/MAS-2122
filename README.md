@@ -21,6 +21,11 @@ Activate the environment:
 
     conda activate NAME_OR_TITLE
     python -m compas_rhino.install
+    
+Optionally, you could provide a Rhino version number (6.0, 7.0). The default is 6.0.
+
+    python -m compas_rhino.install -v 7.0
+
 
 Open folder in Visual Studio Code:
 
