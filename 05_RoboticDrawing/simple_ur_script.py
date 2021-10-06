@@ -41,16 +41,16 @@ def move_l(plane_to, accel, vel):
 def move_l_blend(plane_to, accel, vel, blend_radius = 0):
     """
     Function that returns UR script for linear movement in tool-space.
-    
+
     Args:
         plane_to: Rhino.Geometry Plane. A target plane for calculating pose (in UR base coordinate system)
         accel: tool accel in m/s^2
         vel: tool speed in m/s
-        
+
     Returns:
         script: UR script
     """
-    
+
     # Check acceleration and velocity are non-negative and below a set limit
     accel = MAX_ACCEL if (abs(accel) >MAX_ACCEL) else abs(accel)
     vel = MAX_VELOCITY if (abs(vel) > MAX_VELOCITY) else abs(vel)
@@ -118,8 +118,7 @@ def set_tcp_by_plane(x_offset, y_offset, z_offset, ref_plane=rg.Plane.WorldXY):
 
 def set_tcp_by_angles(x_offset, y_offset, z_offset, x_rotate, y_rotate, z_rotate):
     """
-    TODO(Jason): Need to test this
-    Function that returns UR script for setting tool center point
+
 
     Args:
         x_offset: float. tooltip offset in mm
@@ -179,15 +178,15 @@ def sleep(time):
 def set_digital_out(id, signal):
     """
     Function that returns UR script for setting digital out
-    
+
     Args:
         id: int. Input id number
         signal: boolean. signal level - on or off
-    
+
     Returns:
         script: UR script
     """
-    
+
     # Format UR script
     script = "set_digital_out(%s,%s)\n"%(id,signal)
     return script
