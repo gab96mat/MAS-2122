@@ -55,3 +55,9 @@ For more details, see
 - [COMPAS Installation](https://compas.dev/compas/latest/installation.html)
 - [COMPAS Rhino](https://compas.dev/compas/latest/gettingstarted/rhino.html)
 - [COMPAS Grasshopper](https://compas.dev/compas/latest/gettingstarted/grasshopper.html)
+
+## Credits
+
+This repository is for the [MAS ETH DFAB](https://www.masdfab.com/) program with [Gramazio Kohler Research](https://gramaziokohler.arch.ethz.ch/) and [Digital Building Technologies](https://dbt.arch.ethz.ch/) at [ETH Zurich](https://ethz.ch/en.html).
+
+Developed by Ko Tsuruta(<tsuruta@arch.ethz.ch>)

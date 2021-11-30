@@ -1,24 +1,27 @@
-# ghpython_00_basics
+# py_01_basic
 
-> Sample code for python basics in ghpython.
+> Sample basic code in python.
 
 ## Requirements
 
 Install the following tools:
 
-- [Rhinoceros](https://www.rhino3d.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Anaconda](https://www.anaconda.com/products/individual)
 
 ## Getting started
 
-Open `Rhinoceros3d`
+Open `Anaconda Prompt` and type below:
 
-Open `Grasshopper` type below in the command line in Rhinoceros3d:
+    acitivate ENV_NAME (optional)
+    cd PATH_TO_THIS_FOLDER
+    code .
 
-    grasshopper
 
 🚀 You're ready! 
 
-Open and explore the `ghpython_NUM_NAME.ghx` files in grasshopper.
+Open and explore the `NUM_NAME.py` files in Visual Studio Code.
+
 
 ## Credits
 
