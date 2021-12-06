@@ -1,4 +1,4 @@
-# py_01_basic
+# py_00_basic
 
 > Sample basic code in python.
 
