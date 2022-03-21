@@ -6,7 +6,7 @@ import time
 from compas.geometry import Frame, Point, Vector
 
 # Switches
-ROBOT_ON = False
+ROBOT_ON = True
 PRINT_ON = True
 
 # Robot confgiuration
