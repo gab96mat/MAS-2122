@@ -1,0 +1,46 @@
+MODULE A080_Example
+    !***********************************************************************************
+    !
+    ! ETH Zurich / Robotic Fabrication Lab
+    ! HIB C 13 / Stefano-Franscini-Platz 1
+    ! CH-8093 Zurich
+    !
+    !***********************************************************************************
+    !
+    ! PROJECT     :  RRC - Rapid Robot Communication
+    !
+    ! FUNCTION    :  Example modul for the project 
+    !
+    ! AUTHOR      :  Philippe Fleischmann
+    !
+    ! EMAIL       :  rrc@arch.ethz.ch
+    !
+    ! HISTORY     :  2019.02.22
+    !
+    ! Copyright   :  ETH Zurich (CH) 2019
+    !                - Philippe Fleischmann
+    !                - Michael Lyrenmann
+    !                - Gonzalo Casas
+    !
+    ! License     :  This code base is governed by an EULA (End-User License Agreement)
+    !                which you have received together with the software.
+    !                You are not allowed to use the software on a real robots
+    !                without a signed EULA.
+    !
+    !                A copy of the EULA content is in the controller task (T_CTRL).
+    !
+    !***********************************************************************************
+
+    !************************************************
+    ! Declaration :     tooldata
+    !************************************************
+    !
+    TASK PERS tooldata t_A080_Extruder_Tip:=[TRUE,[[-45,-15.005,140.575],[1,0,0,0]],[1,[0,0,60],[1,0,0,0],0,0,0]];
+
+    !************************************************
+    ! Declaration :     wobjdata
+    !************************************************
+    !
+    TASK PERS wobjdata ob_A080_Workplace:=[FALSE,TRUE,"",[[249.997480606,-350.000371653,9],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+    
+ENDMODULE

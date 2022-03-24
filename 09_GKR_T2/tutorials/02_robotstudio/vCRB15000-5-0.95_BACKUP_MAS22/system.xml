@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemProperties>
+  <SystemName>vCRB15000-5-0.95</SystemName>
+  <SerialNo>VIRTUAL_CONTROLLER</SerialNo>
+  <UsedMedia>
+    <Media path="C:/Users/fleischp/AppData/Local/ABB/RobotWare/RobotControl_7.5.2" name="RobotControl" version="7.5.2+167" versionName="7.5.2"/>
+    <Media path="C:/Users/fleischp/AppData/Local/ABB/RobotWare/RobotOS_4.1.0" name="RobotOS" version="4.1.0+0" versionName="4.1.0"/>
+    <Media path="C:/Users/fleischp/AppData/Local/ABB/RobotWare/Robots_1.5.1" name="Robots" version="1.5.1+32" versionName="1.5.1"/>
+    <Media path="C:/Users/fleischp/AppData/Local/ABB/RobotWare/Wizard_1.3.0" name="Wizard" version="1.3.0" versionName="1.3.0"/>
+  </UsedMedia>
+  <ControlModule>
+    <Option descr="RobotControl Base"/>
+    <Option descr="English"/>
+    <Option descr="3120-1 FlexPendant Limited App Package"/>
+    <Option descr="3120-2 FlexPendant Essential App Package"/>
+    <Option descr="3151-1 FlexPendant Program Package"/>
+    <Option descr="Leadthrough"/>
+    <Option descr="3043-3 SafeMove Collaborative"/>
+    <Option descr="Safe Move Plug and Play"/>
+    <Option descr="No Category 0"/>
+    <Option descr="3127-1 Integrated Vision Interface"/>
+    <Option descr="3106-1 World Zones"/>
+    <Option descr="3107-1 Collision Detection"/>
+    <Option descr="3121-1 RW Add-In Prepared"/>
+    <Option descr="3114-1 Multitasking"/>
+    <Option descr="3119-1 RobotStudio Connect"/>
+  </ControlModule>
+  <DriveModule>
+    <Name>Robot1</Name>
+    <Option descr="C30 for CRB 15000"/>
+  </DriveModule>
+  <AdditionalOption>
+    <Name>Robots</Name>
+    <Option descr="CRB 15000-5/0.95"/>
+  </AdditionalOption>
+  <AdditionalOption>
+    <Name>Wizard</Name>
+    <Option descr="Wizard"/>
+  </AdditionalOption>
+</SystemProperties>
