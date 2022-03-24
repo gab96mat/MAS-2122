@@ -41,7 +41,7 @@ compas_mesh = Mesh.from_obj(os.path.join(DATA, MODEL))
 # ==========================================================================
 # Move to origin
 # ==========================================================================
-move_mesh_to_point(compas_mesh, Point(0, 0, 0))
+move_mesh_to_point(compas_mesh, Point(200, 200, 0))
 
 # ==========================================================================
 # Slicing
@@ -49,7 +49,7 @@ move_mesh_to_point(compas_mesh, Point(0, 0, 0))
 #          'cgal':    Very fast. Only for closed paths.
 #                     Requires additional installation (compas_cgal).
 # ==========================================================================
-slicer = PlanarSlicer(compas_mesh, slicer_type="cgal", layer_height=3.5)
+slicer = PlanarSlicer(compas_mesh, slicer_type="cgal", layer_height=3.5, slice_height_range=(0, 20))
 slicer.slice_model()
 
 # ==========================================================================
@@ -84,8 +84,8 @@ print_organizer.create_printpoints(generate_mesh_normals=False)
 # Set fabrication-related parameters
 # ==========================================================================
 set_extruder_toggle(print_organizer, slicer) # extruder toggle
-add_safety_printpoints(print_organizer, z_hop=10.0) # safety printpoints
-set_linear_velocity_constant(print_organizer, v=100.0) # velocity
+# add_safety_printpoints(print_organizer, z_hop=10.0) # safety printpoints
+set_linear_velocity_constant(print_organizer, v=1000.0) # velocity
 set_blend_radius(print_organizer, d_fillet=10.0) # blend radius
 
 print(print_organizer)
@@ -100,6 +100,9 @@ print(print_organizer)
 # =========================================================================
 printpoints_data = print_organizer.output_nested_printpoints_dict()
 utils.save_to_json(printpoints_data, OUTPUT_DIR, 'out_printpoints_nested.json')
+
+printpoints_data = print_organizer.output_printpoints_dict()
+utils.save_to_json(printpoints_data, OUTPUT_DIR, 'out_printpoints_flat.json')
 
 # ==========================================================================
 # Initializes the compas_viewer and visualizes results
